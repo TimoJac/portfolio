@@ -39,6 +39,23 @@
         <a href="#food">Food</a>
     </div>
 
+    <button class="back-to-top hidden">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="back-to-top-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 11l5-5m0 0l5 5m-5-5v12"
+            />
+        </svg>
+</button>
+
 
     <div id="container-list-gallery">
 
@@ -163,6 +180,7 @@
         <div id="footer-links">
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
         </div>
     </footer>
     
@@ -182,6 +200,32 @@
                 navbar.classList.remove("sticky");
             }
         } 
+    </script>
+
+    <script>
+        const showOnPx = 185;
+        const backToTopButton = document.querySelector(".back-to-top")
+
+        const scrollContainer = () => {
+        return document.documentElement || document.body;
+        };
+
+        document.addEventListener("scroll", () => {
+        if (scrollContainer().scrollTop > showOnPx) {
+            backToTopButton.classList.remove("hidden")
+        } else {
+            backToTopButton.classList.add("hidden")
+        }
+        })
+
+
+        const goToTop = () => {
+            document.body.scrollIntoView({
+                behavior: "smooth",
+            });
+        };
+
+        backToTopButton.addEventListener("click", goToTop)
     </script>
 
     <script>

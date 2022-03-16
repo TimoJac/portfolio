@@ -317,18 +317,10 @@ div#footer-text{
     width: 20px;
     text-align: center;
     text-decoration: none;
+    background: #374055;
+    color: white;
   }
   
   .fa:hover {
     opacity: 0.7;
-  }
-
-  .fa-instagram {
-    background: #374055;
-    color: white;
-  }
-
-  .fa-linkedin {
-    background: #374055;
-    color: white;
   }
