@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/ico" href="favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
 <body>
 
     <header>
-            <a id="header-title" href="../index.html">Timothée JACOB</a>
+            <a id="header-title" href="index.html">Timothée JACOB</a>
             <h4 id="header-subtitle">Galerie</h4>
             <div id="header-border"></div>
     </header>
@@ -65,7 +66,7 @@
             
             <div class="containerPhoto">
                 <?php
-                    foreach(glob('../gallery/street/*.jpg') as $filename){
+                    foreach(glob('gallery/street/*.jpg') as $filename){
                         ?>
                             <div>
                                 <img loading="lazy" src="<?= $filename ?>">
@@ -84,7 +85,7 @@
 
             <div class="containerPhoto">
                 <?php
-                    foreach(glob('../gallery/paysage/*.jpg') as $filename){
+                    foreach(glob('gallery/paysage/*.jpg') as $filename){
                         ?>
                             <div>
                                 <img loading="lazy" src="<?= $filename ?>">
@@ -103,7 +104,7 @@
             
             <div class="containerPhoto">
                 <?php
-                    foreach(glob('../gallery/portrait/*.jpg') as $filename){
+                    foreach(glob('gallery/portrait/*.jpg') as $filename){
                         ?>
                             <div>
                                 <img loading="lazy" src="<?= $filename ?>">
@@ -121,7 +122,7 @@
         
             <div class="containerPhoto">
                 <?php
-                    foreach(glob('../gallery/wildlife/*.jpg') as $filename){
+                    foreach(glob('gallery/wildlife/*.jpg') as $filename){
                         ?>
                             <div>
                                 <img loading="lazy" src="<?= $filename ?>">
@@ -139,7 +140,7 @@
             
             <div class="containerPhoto">
                 <?php
-                    foreach(glob('../gallery/packshot/*.jpg') as $filename){
+                    foreach(glob('gallery/packshot/*.jpg') as $filename){
                         ?>
                             <div>
                                 <img loading="lazy" src="<?= $filename ?>">
@@ -157,7 +158,7 @@
             
             <div class="containerPhoto">
                 <?php
-                    foreach(glob('../gallery/food/*.jpg') as $filename){
+                    foreach(glob('gallery/food/*.jpg') as $filename){
                         ?>
                             <div>
                                 <img loading="lazy" src="<?= $filename ?>">
@@ -180,6 +181,7 @@
         <div id="footer-links">
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
         </div>
     </footer>
     

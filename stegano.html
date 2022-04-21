@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <header>
+            <a id="header-title" href="index.html">Timothée JACOB</a>
+            <h4 id="header-subtitle">Stegano</h4>
+            <div id="header-border"></div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $("header h4").css('width', $('header a').width() + 170 + 'px');
+    </script>
+
+    <div id="container-list-page">
+
+        
+
+        <p style="text-align-last: left;">
+            Ce programme a été réalisé en C dans le cadre de mes études. Le but de ce programme est de pouvoir cacher un fichier/une chaîne de caractère dans des images.
+        </p>
+        <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
+        <p style="text-align-last: right;">
+            Pour cela, on vient insérer les bits de notre fichier/chaîne de caractère dans le dernier bit de chaque pixel, aussi appelés "bits faibles", de notre image, permettant de rendre cette transformation imperceptibe.
+        </p>
+        <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
+        <p style="text-align-last: left;">
+            Plusieurs techniques de dissimulation et de cryptage sont proposées pour rendre le décodage plus complexe : table de permutation liée à une clé, dissimulation selon un sens de parcours lié à une clé ou à une matrice de Hamming (insertion par syndrome).
+        </p>
+    
+
+        <div id="menu-button-list">
+
+                <a class="dnbtn" href="https://github.com/TimoJac/steganography_doer" target="_blank">Code source</a>
+
+                <a class="dnbtn" href="download/stegano_doer.rar" download="Stegano_doer.rar">Télécharger</a>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div id="footer-text">
+            <p>Made by Timothée JACOB</p>
+        </div>
+
+        <div id="footer-links">
+            <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+        </div>
+    </footer>
+    
+
+
+    
+
+
+</body>
+
+
+
+
+</html>

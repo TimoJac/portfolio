@@ -58,7 +58,7 @@ body{
 
 
 
-body h3{
+h3{
     color: rgb(233, 230, 227);
     font-style: italic;
     font-weight: 100;
@@ -101,6 +101,15 @@ div#container-list-page p{
     margin-bottom: 50px;
 }
 
+ul li{
+    color: rgb(240, 237, 233);
+}
+
+#container-list-page p a{
+    text-decoration: underline;
+    color: rgb(240, 237, 233);
+}
+
 div#menu-button-list{
     display: flex;
     flex-direction: row;
@@ -124,6 +133,12 @@ div#menu-button-list{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: ease-in-out 0.3s;
+}
+
+#container-list-page h5{
+    font-size: 12px;
+    font-style: italic;
+    color: #ccc;
 }
   
 
@@ -216,7 +231,6 @@ button svg{
   }
 
  button.back-to-top {
-    background-color: rgb(99, 99, 99);
     position: fixed;
     right: 2rem;
     bottom: 2rem;
