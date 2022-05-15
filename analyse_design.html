@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,34 +19,40 @@
 </head>
 
 <body>
+
     <header>
             <a id="header-title" href="index.html">Timothée JACOB</a>
-            <h4 id="header-subtitle">Système d'information</h4>
+            <h4 id="header-subtitle header_analyse" style="color: #4C90C3">Système d'information</h4>
             <div id="header-border"></div>
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $("header h4").css('width', $('header a').width() + 170 + 'px');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        if(screen.width > 768){
+            $("#header-subtitle").css('width', $('#header-title').width() + 170 + 'px');
+        }
+
+        $(window).resize(function() {
+            $("header h4").css('width', $('header a').width() + 170 + 'px');
+        });
     </script>
 
     <div id="container-list-page">
 
-        <p style="text-align-last: right;">
-            Ce projet a consisté en l'analyse et le design en anglais d'un nouveau système d'information basé sur existant pour une entreprise fictive d'hospitalisation à domicile en utilisant le langage UML.
+        <p class="text-right">
+            Ce projet a consisté en <mark>&nbsp;l'analyse et le design en anglais d'un nouveau système d'information&nbsp;</mark> basé sur existant pour une entreprise fictive d'hospitalisation à domicile en utilisant le <mark>&nbsp;langage UML.&nbsp;</mark>
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: left;">
-            Notre problématique était de proposer un modèle de système d'information qui rend possible le contrôle de la qualité des soins à domicile en renforçant la capacité de coordination des professionnels de santé, dans le but de développer les performances dans ce domaine et de faire reconnaitre ce mode de soins.
+        <p class="text-left">
+            Notre problématique était de proposer un modèle de système d'information qui rend possible le contrôle de la qualité des soins à domicile en renforçant la capacité de coordination des professionnels de santé, dans le but de <mark>&nbsp;développer les performances&nbsp;</mark> dans ce domaine et de faire reconnaitre ce mode de soins.
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: right;">
-            Pour cela nous avons tout d'abord identifiés les problèmes externes (visibles par le client) et internes (visibles seulement par l'entreprise), les différents acteurs et documents. Nous avons ensuite identifié les besoins (business needs), les exigences (business requirements) et les objectifs (business value) de l'entreprise.
+        <p class="text-right">
+            Pour cela nous avons tout d'abord identifié les problèmes externes (visibles par le client) et internes (visibles seulement par l'entreprise), les différents acteurs et documents. Nous avons ensuite identifié les besoins (business needs), les exigences (business requirements) et les objectifs (business value) de l'entreprise.
         </p>
 
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: left; margin-bottom: 5px;">
-            Puis, pour présenter nos idées de manière visuelle, nous avons réalisé différents diagrammes :
+        <p class="text-left" style=" margin-bottom: 5px;">
+            Puis, pour présenter nos idées de manière visuelle, nous avons réalisé <mark>&nbsp;différents diagrammes&nbsp;</mark> :
                 <ul style="color: rgb(233,230,227); width: 60%;">
                     <li>Diagrammes d'activité</li>
                     <li>Diagrammes de cas d'utilisation et scénariis</li>
@@ -76,12 +82,13 @@
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank" class="fa fa-file-text"></a>
         </div>
     </footer>
     
 
-
     
+
 
 
 </body>

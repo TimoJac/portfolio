@@ -21,13 +21,18 @@
 
     <header>
             <a id="header-title" href="index.html">Timothée JACOB</a>
-            <h4 id="header-subtitle">Galerie</h4>
+            <h4 id="header-subtitle" style="color: #C3B650">Galerie</h4>
             <div id="header-border"></div>
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $("header h4").css('width', $('header a').width() + 170 + 'px');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        if(screen.width > 768){
+            $("#header-subtitle").css('width', $('#header-title').width() + 170 + 'px');
+        }
+
+        $(window).resize(function() {
+            $("header h4").css('width', $('header a').width() + 170 + 'px');
+        });
     </script>
 
 
@@ -182,6 +187,7 @@
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank" class="fa fa-file-text"></a>
         </div>
     </footer>
     

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,23 +25,28 @@
             <div id="header-border"></div>
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $("header h4").css('width', $('header a').width() + 170 + 'px');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        if(screen.width > 768){
+            $("#header-subtitle").css('width', $('#header-title').width() + 170 + 'px');
+        }
+
+        $(window).resize(function() {
+            $("header h4").css('width', $('header a').width() + 170 + 'px');
+        });
     </script>
 
     <div id="container-list-page">
 
-        <p style="text-align-last: left;">
-            Ce programme a été réalisé en C dans le cadre de mes études. Le but de ce programme est de résoudre des sudokus à partir des valeurs de départ qu'on lui donne.
+        <p class="text-left">
+            Ce programme a été <mark>&nbsp;réalisé en C&nbsp;</mark> dans le cadre de mes études. Le but de ce programme est de <mark>&nbsp;résoudre des sudokus&nbsp;</mark> à partir des valeurs de départ qu'on lui donne.
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: right;">
-            Pour cela, le programme utilise un tableau en 3 dimensions en 9x9x10. Le 1er tableau de 9x9 correspond au sudoku, tandis que les 9 autres tableaux de 9x9 correpondent chacun à un tableau remplis des hypothèses pour 1 chiffre.
+        <p class="text-right">
+            Pour cela, le programme utilise un <mark>&nbsp;tableau en 3 dimensions&nbsp;</mark> en 9x9x10. Le 1er tableau de 9x9 correspond au sudoku, tandis que les 9 autres tableaux de 9x9 correpondent chacun à un tableau remplis des hypothèses pour 1 chiffre.
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: left;">
-            Pour résoudre le sudoku, le programme va utiliser les méthodes d'inclusion et d'exclusion, qui consistent à supprimer les hypothèses du chiffre étant dans la ligne/colonne/carré, mais aussi de compléter les lignes/colonnes/carrés où il ne manque qu'un seul chiffre.
+        <p class="text-left">
+            Pour résoudre le sudoku, le programme va utiliser les <mark>&nbsp;méthodes d'inclusion et d'exclusion&nbsp;</mark>, qui consistent à supprimer les hypothèses du chiffre étant dans la ligne/colonne/carré, mais aussi de compléter les lignes/colonnes/carrés où il ne manque qu'un seul chiffre.
         </p>
     
 
@@ -49,7 +54,7 @@
 
                 <a class="dnbtn" href="https://github.com/TimoJac/sudoku_solver" target="_blank">Code source</a>
 
-                <a class="dnbtn" href="download/sudoku_solver.rar" download="Sudoku_solver.rar">Télécharger</a>
+                <a class="dnbtn phone-hidden" href="download/sudoku_solver.rar" download="Sudoku_solver.rar">Télécharger</a>
         </div>
 
     </div>
@@ -64,6 +69,7 @@
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank" class="fa fa-file-text"></a>
         </div>
     </footer>
     

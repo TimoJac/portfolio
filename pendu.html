@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,23 +25,28 @@
             <div id="header-border"></div>
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $("header h4").css('width', $('header a').width() + 170 + 'px');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        if(screen.width > 768){
+            $("#header-subtitle").css('width', $('#header-title').width() + 170 + 'px');
+        }
+
+        $(window).resize(function() {
+            $("header h4").css('width', $('header a').width() + 170 + 'px');
+        });
     </script>
 
     <div id="container-list-page">
 
-        <p style="text-align-last: left;">
-            Ce programme a été réalisé en C en tant que projet personnel. Il permet de jouer au jeu du pendu, avec le programme faisant deviner un mot au joueur.
+        <p class="text-left">
+            Ce programme a été <mark>&nbsp;réalisé en C&nbsp;</mark> en tant que projet personnel. Il permet de jouer au <mark>&nbsp;jeu du pendu&nbsp;</mark>, avec le programme faisant deviner un mot au joueur.
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: right;">
-            Pour cela, une liste de plus de 800 mots de la langue française sont stockés dans un fichier texte. Le programme va ensuite aller chercher un mot aléatoire à faire deviner.
+        <p class="text-right">
+            Pour cela, <mark>&nbsp;plus de 800 mots&nbsp;</mark> de la langue française sont stockés dans un fichier texte. Le programme va ensuite aller chercher un <mark>&nbsp;mot aléatoire&nbsp;</mark> à faire deviner.
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: left;">
-            Ensuite, de manière récursive, le programme va gérer la partie, en demandant une lettre au joueur, et en lui indiquant si elle est présente dans le mot ou nom, et gérer le dessin du pendu en fonction du nombre d'erreurs.
+        <p class="text-left">
+            Ensuite, de <mark>&nbsp;manière récursive&nbsp;</mark>, le programme va gérer la partie, en demandant une lettre au joueur, et en lui indiquant si elle est présente dans le mot ou nom, et gérer le dessin du pendu en fonction du nombre d'erreurs.
         </p>
     
 
@@ -49,7 +54,7 @@
 
                 <a class="dnbtn" href="https://github.com/TimoJac/solo_hangman" target="_blank">Code source</a>
 
-                <a class="dnbtn" href="download/hangman.rar" download="Hangman.rar">Télécharger</a>
+                <a class="dnbtn phone-hidden" href="download/hangman.rar" download="Hangman.rar">Télécharger</a>
         </div>
 
     </div>
@@ -64,6 +69,7 @@
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank" class="fa fa-file-text"></a>
         </div>
     </footer>
     

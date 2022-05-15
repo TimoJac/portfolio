@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,44 +21,49 @@
 <body>
     <header>
             <a id="header-title" href="index.html">Timothée JACOB</a>
-            <h4 id="header-subtitle">Gaïa's Odyssey</h4>
+            <h4 id="header-subtitle" style="color: aquamarine;">Gaïa's Odyssey</h4>
             <div id="header-border"></div>
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $("header h4").css('width', $('header a').width() + 170 + 'px');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        if(screen.width > 768){
+            $("#header-subtitle").css('width', $('#header-title').width() + 170 + 'px');
+        }
+
+        $(window).resize(function() {
+            $("header h4").css('width', $('header a').width() + 170 + 'px');
+        });
     </script>
 
     <div id="container-list-page">
 
         
 
-        <p style="text-align-last: right;">
-            Ce programme a été réalisé sur le logiciel Stencyl dans le cadre de mes études en tant qu'introduction au génie logiciel. Nous étions un groupe de 4 et devions réaliser toutes les étapes de conception d'un jeu vidéo tout au long du semestre.
+        <p class="text-right">
+            Ce programme a été réalisé dans le cadre de mes études en tant qu'<mark>&nbsp;introduction au génie logiciel.&nbsp;</mark> <br> Nous devions réaliser toutes les étapes de <mark>&nbsp;conception d'un jeu vidéo&nbsp;</mark> tout au long du semestre.
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: left; margin-bottom: 10px;">
+        <p class="text-left" style=" margin-bottom: 10px;">
             Pour cela nous avons mis en place différentes étapes :
             <ul id="gaia-list" style="width: 60%; color: rgb(233, 230, 227);">
                 <li> Brainstorming</li>
-                <li> Réalisation d'un Minimum Viable Product (MVP) et d'un TOP (Produit final idéal)</li>
+                <li> Réalisation d'un Minimum Viable Product (<mark>&nbsp;MVP&nbsp;</mark>) et d'un produit final idéal (<mark>&nbsp;TOP&nbsp;</mark>)</li>
                 <li> Réalisation d'un scénario et d'un storyboard</li>
-                <li> Organisation du travail par matrice RACI et GANTT</li>
-                <li> Game development sur l'outil <a href="https://www.stencyl.com/" style="color: rgb(233, 230, 227); text-decoration: underline;">Stencyl</a></li>
-                <li> Game-design et level-design : Utilisation du logiciel open-source Inkscape pour la réalisation des graphismes</li>
-                <li> Tests utilisateurs avec protocole de test</li>
+                <li> Organisation du travail par <mark>&nbsp;matrice RACI et GANTT&nbsp;</mark></li>
+                <li> Game development sur l'outil <mark>&nbsp;<a href="https://www.stencyl.com/" style="color: rgb(233, 230, 227); text-decoration: underline;">Stencyl</a>&nbsp;</mark></li>
+                <li> Game-design et level-design : Utilisation du logiciel <mark>&nbsp;open-source Inkscape&nbsp;</mark> pour la réalisation des graphismes</li>
+                <li> <mark>&nbsp;Tests utilisateurs&nbsp;</mark> avec protocole de test</li>
                 <li> Réalisation d'un pitch et d'une publicité</li>
                 <li> Présentation du produit final</li>
             </ul>
         </p>
         <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%;"></span>
-        <p style="text-align-last: right;">
-            Notre but pour ce projet était, dans un laps de temps très court, de créer un jeu qui soit divertissant, avec le minimum de bugs possible, présentant une qualité graphique et sonore suffisante, et de sensibiliser les joueurs à la protection de l'environnement.
+        <p class="text-right">
+            Notre but pour ce projet était, dans un laps de temps très court, de créer un jeu qui soit divertissant, <br> avec le minimum de bugs possible, présentant une qualité graphique et sonore suffisante, <br> et de sensibiliser les joueurs à la protection de l'environnement.
         </p>
     
 
-        <div id="menu-button-list">
+        <div id="menu-button-list" class="phone-hidden">
 
                 <a class="dnbtn" href="./game" target="_blank">Jouer au jeu !</a>
 
@@ -76,6 +81,7 @@
             <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank" class="fa fa-file-text"></a>
         </div>
     </footer>
     

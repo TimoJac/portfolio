@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,300&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <header>
+            <a id="header-title" href="index.html">Timothée JACOB</a>
+            <h4 id="header-subtitle">Qui-suis je ?</h4>
+            <div id="header-border"></div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        if(screen.width > 768){
+            $("#header-subtitle").css('width', $('#header-title').width() + 170 + 'px');
+        }
+
+        $(window).resize(function() {
+            $("header h4").css('width', $('header a').width() + 170 + 'px');
+        });
+    </script>
+
+    <div id="container-list-page">
+
+        <div class="a_propos">
+            <p class="text-left">
+                Je suis Timothée JACOB, étudiant en 3ème année d'école d'ingénieur, spécialité Informatique et Systèmes d'Information, à l'Université de Technologie de Troyes (UTT).
+                <br><br>
+                Je recheche actuellement un stage en tant que développeur web ou logiciel d'une durée de 6 mois à compter du 11 Juillet 2022.
+                <br><br>
+                Je code activement dans plusieurs langages tels que le C, l'HTML et le CSS, le Java ou le PHP depuis maintenant plus de 7 ans. Je suis toujours à la recherche de nouveaux défis, et j'aime apprendre de nouvelles choses.
+            </p>
+            <img src="./img/portrait.jpg" alt="Portrait" style="width: 300px;">
+        </div>
+
+        <span style="border: 1.2px solid rgb(233, 230, 227); width: 10%; margin-bottom: 50px;"></span>
+        <div id="cv">
+            <h3 style="cursor: default;">Cliquez sur l'image ci-dessous pour découvrir mon CV !</h3>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank"> <img src="./img/cv.jpg" alt="CV"> </a>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div id="footer-text">
+            <p>Made by Timothée JACOB</p>
+        </div>
+
+        <div id="footer-links">
+            <a href="https://www.instagram.com/timothee_jacob/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/timoth%C3%A9e-jacob-1b6b63192/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/TimoJac/portfolio" target="_blank" class="fa fa-github"></a>
+            <a href="CV_Timothee_JACOB.pdf" target="_blank" class="fa fa-file-text"></a>
+        </div>
+    </footer>
+    
+
+
+    
+
+
+</body>
+
+
+
+
+</html>
